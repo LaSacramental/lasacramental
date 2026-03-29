@@ -55,6 +55,7 @@ nav {
   object-fit: contain;
   display: block;
   transition: opacity 0.3s;
+  border-radius: 50%;
 }
 
 .nav-logo:hover img { opacity: 0.75; }
