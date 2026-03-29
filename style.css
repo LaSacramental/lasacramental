@@ -45,13 +45,13 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 3rem;
+  padding: 0.75rem 3rem;
   background: linear-gradient(to bottom, var(--bg) 60%, transparent);
 }
 
 .nav-logo img {
-  height: 48px;
-  width: 48px;
+  height: 80px;
+  width: 80px;
   object-fit: contain;
   display: block;
   transition: opacity 0.3s;
