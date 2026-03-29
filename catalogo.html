@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo — La Sacramental</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">La Sacramental</a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="quienes-somos.html"><span data-lang="es">Quiénes somos</span><span data-lang="en">About</span></a></li>
+        <li><a href="catalogo.html" class="active"><span data-lang="es">Catálogo</span><span data-lang="en">Catalogue</span></a></li>
+        <li><a href="contacto.html"><span data-lang="es">Contacto</span><span data-lang="en">Contact</span></a></li>
+      </ul>
+      <div class="lang-toggle">
+        <button id="btn-es" class="active" onclick="setLang('es')">ES</button>
+        <span class="lang-divider">|</span>
+        <button id="btn-en" onclick="setLang('en')">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page">
+    <span class="section-tag">
+      <span data-lang="es">Catálogo</span>
+      <span data-lang="en">Catalogue</span>
+    </span>
+
+    <div data-lang="es">
+      <h2>Lanzamientos</h2>
+      <p class="coming-soon">Próximamente.</p>
+      <p>El primer lanzamiento de La Sacramental está en preparación. Si quieres ser el primero en saberlo, escríbenos.</p>
+      <a class="contact-email" href="contacto.html">Escríbenos →</a>
+    </div>
+
+    <div data-lang="en">
+      <h2>Releases</h2>
+      <p class="coming-soon">Coming soon.</p>
+      <p>La Sacramental's first release is in preparation. If you want to be the first to know, get in touch.</p>
+      <a class="contact-email" href="contacto.html">Get in touch →</a>
+    </div>
+  </section>
+
+  <footer>
+    <span>La Sacramental</span>
+    <span>Barcelona</span>
+    <span>© 2026</span>
+  </footer>
+
+  <script src="lang.js"></script>
+</body>
+</html>

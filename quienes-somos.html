@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiénes somos — La Sacramental</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">La Sacramental</a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="quienes-somos.html" class="active"><span data-lang="es">Quiénes somos</span><span data-lang="en">About</span></a></li>
+        <li><a href="catalogo.html"><span data-lang="es">Catálogo</span><span data-lang="en">Catalogue</span></a></li>
+        <li><a href="contacto.html"><span data-lang="es">Contacto</span><span data-lang="en">Contact</span></a></li>
+      </ul>
+      <div class="lang-toggle">
+        <button id="btn-es" class="active" onclick="setLang('es')">ES</button>
+        <span class="lang-divider">|</span>
+        <button id="btn-en" onclick="setLang('en')">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page">
+    <span class="section-tag">
+      <span data-lang="es">Quiénes somos</span>
+      <span data-lang="en">About</span>
+    </span>
+
+    <div data-lang="es">
+      <h2>Un sello fundado<br><em>con un objetivo preciso.</em></h2>
+      <p><strong>La Sacramental</strong> es un sello independiente de vinilo fundado en Barcelona, inspirado en Madrid, con un objetivo preciso: reeditar música gótica, darkwave y sonidos afines de los años ochenta y noventa que merece una segunda vida en formato físico.</p>
+      <p>No somos una empresa. Somos un proyecto personal movido por la convicción de que cierta música, injustamente olvidada, todavía tiene algo que decir.</p>
+
+      <div class="about-name-block">
+        <h3>Sobre el nombre</h3>
+        <p>En Madrid, <em>sacramental</em> no es un adjetivo religioso genérico. Es una palabra con geografía propia.</p>
+        <p>Designa las cofradías históricas que desde el siglo XVI administraron los cementerios de la ciudad: la Sacramental de San Justo, la de San Lorenzo, la de San Isidro. Cementerios situados en la zona sur, en los barrios de Carabanchel y Usera, cuyas tapias y cipreses formaron parte del paisaje cotidiano de una generación.</p>
+        <p>No es un homenaje abstracto. Es un homenaje concreto, con dirección postal.</p>
+        <p>En 1982, en la calle Tablada 25 de Carabanchel —a la vista de esos mismos cementerios— ensayaban Parálisis Permanente y Gabinete Caligari. Ese año, Edi Clavo fundó <strong>Tres Cipreses</strong>, el primer sello independiente de la movida siniestra madrileña. Los tres cipreses del logo eran los que se veían desde las ventanas del local.</p>
+        <p><strong>La Sacramental</strong> es el paso siguiente de esa misma historia.</p>
+
+        <div class="cemetery-links">
+          <a href="#" title="Cementerio de la Sacramental de San Justo">Sacramental de San Justo</a>
+          <a href="#" title="Cementerio de la Sacramental de San Lorenzo">Sacramental de San Lorenzo</a>
+          <a href="#" title="Cementerio de la Sacramental de San Isidro">Sacramental de San Isidro</a>
+        </div>
+      </div>
+    </div>
+
+    <div data-lang="en">
+      <h2>A label founded<br><em>with a single purpose.</em></h2>
+      <p><strong>La Sacramental</strong> is an independent vinyl label founded in Barcelona, inspired by Madrid, with a single purpose: to reissue gothic, darkwave and related music from the eighties and nineties that deserves a second life in physical format.</p>
+      <p>We are not a company. We are a personal project, driven by the conviction that certain unjustly forgotten music still has something to say.</p>
+
+      <div class="about-name-block">
+        <h3>On the name</h3>
+        <p>In Madrid, <em>sacramental</em> is not a generic religious adjective. It is a word with its own geography.</p>
+        <p>It designates the historic brotherhoods that since the 16th century administered the city's cemeteries: the Sacramental de San Justo, de San Lorenzo, de San Isidro. Cemeteries located in the southern districts of Carabanchel and Usera, whose walls and cypress trees shaped the everyday landscape of a generation.</p>
+        <p>This is not an abstract homage. It is a precise one, with a street address.</p>
+        <p>In 1982, at Calle Tablada 25 in Carabanchel — within sight of those very cemeteries — Parálisis Permanente and Gabinete Caligari were rehearsing. That year, Edi Clavo founded <strong>Tres Cipreses</strong>, the first independent label of the Madrid <em>movida siniestra</em>. The three cypresses in the logo were the ones visible from the rehearsal room windows.</p>
+        <p><strong>La Sacramental</strong> is the next chapter of that same story.</p>
+
+        <div class="cemetery-links">
+          <a href="#" title="Cementerio de la Sacramental de San Justo">Sacramental de San Justo</a>
+          <a href="#" title="Cementerio de la Sacramental de San Lorenzo">Sacramental de San Lorenzo</a>
+          <a href="#" title="Cementerio de la Sacramental de San Isidro">Sacramental de San Isidro</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>La Sacramental</span>
+    <span>Barcelona</span>
+    <span>© 2026</span>
+  </footer>
+
+  <script src="lang.js"></script>
+</body>
+</html>

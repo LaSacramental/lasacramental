@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto — La Sacramental</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">La Sacramental</a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="quienes-somos.html"><span data-lang="es">Quiénes somos</span><span data-lang="en">About</span></a></li>
+        <li><a href="catalogo.html"><span data-lang="es">Catálogo</span><span data-lang="en">Catalogue</span></a></li>
+        <li><a href="contacto.html" class="active"><span data-lang="es">Contacto</span><span data-lang="en">Contact</span></a></li>
+      </ul>
+      <div class="lang-toggle">
+        <button id="btn-es" class="active" onclick="setLang('es')">ES</button>
+        <span class="lang-divider">|</span>
+        <button id="btn-en" onclick="setLang('en')">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page">
+    <span class="section-tag">
+      <span data-lang="es">Contacto</span>
+      <span data-lang="en">Contact</span>
+    </span>
+
+    <div data-lang="es">
+      <h2>Escríbenos.</h2>
+      <p>Para consultas sobre el catálogo, licencias o cualquier otra cuestión:</p>
+      <a class="contact-email" href="mailto:hola@lasacramental.com">hola@lasacramental.com</a>
+      <p class="contact-instagram">Instagram: <a href="https://instagram.com/lasacramental">@lasacramental</a></p>
+    </div>
+
+    <div data-lang="en">
+      <h2>Get in touch.</h2>
+      <p>For catalogue enquiries, licensing or anything else:</p>
+      <a class="contact-email" href="mailto:hola@lasacramental.com">hola@lasacramental.com</a>
+      <p class="contact-instagram">Instagram: <a href="https://instagram.com/lasacramental">@lasacramental</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <span>La Sacramental</span>
+    <span>Barcelona</span>
+    <span>© 2026</span>
+  </footer>
+
+  <script src="lang.js"></script>
+</body>
+</html>
