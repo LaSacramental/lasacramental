@@ -290,6 +290,18 @@ p strong {
 }
 
 /* ── Footer ─────────────────────────────────────── */
+/* Footnote */
+.footnote {
+  margin-top: 4.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
 footer {
   border-top: 1px solid var(--rule);
   padding: 2.5rem 3rem;
