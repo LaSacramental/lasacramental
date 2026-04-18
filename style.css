@@ -60,12 +60,6 @@ nav {
 
 .nav-logo:hover img { opacity: 0.75; }
 
-.nav-right {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-
 .nav-links {
   display: flex;
   gap: 2rem;
@@ -85,34 +79,6 @@ nav {
 
 .nav-links a:hover,
 .nav-links a.active { color: var(--text); }
-
-/* Language toggle */
-.lang-toggle {
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-}
-
-.lang-toggle button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-family: var(--font-body);
-  font-weight: 300;
-  font-size: 0.7rem;
-  letter-spacing: 0.1em;
-  color: var(--text-muted);
-  padding: 0;
-  transition: color 0.3s;
-}
-
-.lang-toggle button.active { color: var(--accent); }
-.lang-toggle button:hover  { color: var(--text); }
-
-.lang-divider {
-  color: var(--rule);
-  line-height: 1;
-}
 
 /* ── Hero (index only) ──────────────────────────── */
 .hero {
@@ -301,6 +267,25 @@ p strong {
   line-height: 1.7;
 }
 
+/* ── Banner Coming Soon ─────────────────────────── */
+.banner-coming-soon {
+  background: var(--bg);
+  padding: 1.25rem;
+  text-align: center;
+  border-top: 1px solid var(--accent);
+  border-bottom: 1px solid var(--accent);
+  margin-top: 120px;
+}
+
+.banner-coming-soon p {
+  color: var(--accent);
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
 /* ── Footer ─────────────────────────────────────── */
 footer {
   border-top: 1px solid var(--rule);
@@ -320,35 +305,9 @@ footer {
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* ── Language ───────────────────────────────────── */
-[data-lang="en"]          { display: none; }
-[data-lang="es"]          { display: block; }
-span[data-lang="es"]      { display: inline; }
-span[data-lang="en"]      { display: none; }
-
-body.lang-en [data-lang="es"] { display: none; }
-body.lang-en [data-lang="en"] { display: block; }
-body.lang-en span[data-lang="es"] { display: none; }
-body.lang-en span[data-lang="en"] { display: inline; }
-
 /* ── Responsive ─────────────────────────────────── */
 @media (max-width: 640px) {
   nav { padding: 1.25rem 1.5rem; }
   .nav-links { display: none; }
   footer { flex-direction: column; gap: 0.75rem; text-align: center; }
-}
-
-/* ── Banner Coming Soon ─────────────────────────── */
-.banner-coming-soon {
-  background: var(--bg);
-  padding: 1.25rem;
-  text-align: center;
-  border-top: 1px solid var(--accent);
-  border-bottom: 1px solid var(--accent);
-  margin-top: 120px;
-}
-
-.banner-coming-soon p {
-  color: var(--accent) !important;
-  margin: 0;
 }
