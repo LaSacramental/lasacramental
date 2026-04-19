@@ -80,6 +80,28 @@ nav {
 .nav-links a:hover,
 .nav-links a.active { color: var(--text); }
 
+/* Mobile menu toggle — hidden on desktop */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 0.5rem 0;
+  transition: color 0.3s;
+}
+
+.nav-toggle:hover,
+.nav-toggle:focus-visible {
+  color: var(--text);
+  outline: none;
+}
+
 /* ── Hero (index only) ──────────────────────────── */
 .hero {
   flex: 1;
@@ -307,7 +329,61 @@ footer {
 
 /* ── Responsive ─────────────────────────────────── */
 @media (max-width: 640px) {
-  nav { padding: 1.25rem 1.5rem; }
-  .nav-links { display: none; }
-  footer { flex-direction: column; gap: 0.75rem; text-align: center; }
+  nav { padding: 1rem 1.5rem; }
+
+  .nav-logo img {
+    height: 72px;
+    width: 72px;
+  }
+
+  .nav-toggle { display: block; }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    padding: 0.5rem 1.5rem 1.5rem;
+    background: var(--bg);
+    border-top: 1px solid var(--rule);
+  }
+
+  nav.is-open .nav-links {
+    display: flex;
+  }
+
+  .nav-links li {
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .nav-links li:last-child {
+    border-bottom: none;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 1rem 0;
+    font-size: 0.85rem;
+  }
+
+  .banner-coming-soon {
+    margin-top: 88px;
+    padding: 1rem;
+  }
+
+  .banner-coming-soon p { font-size: 32px; }
+
+  .page { padding: 7rem 1.5rem 4rem; }
+
+  footer {
+    flex-direction: column;
+    gap: 0.75rem;
+    text-align: center;
+    padding: 2rem 1.5rem;
+  }
+
+  .hero { padding: 5rem 1.5rem 3rem; }
 }

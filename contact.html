@@ -41,10 +41,11 @@
 
   <nav>
     <a href="index.html" class="nav-logo"><img src="Logo.png" alt="La Sacramental"></a>
-    <ul class="nav-links">
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <ul class="nav-links" id="nav-links">
       <li><a href="about.html">About</a></li>
       <li><a href="catalogue.html">Catalogue</a></li>
-      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
@@ -62,6 +63,31 @@
     <span>Barcelona</span>
     <span>© 2026</span>
   </footer>
+
+ <script>
+    (function() {
+      const nav = document.querySelector('nav');
+      const toggle = document.querySelector('.nav-toggle');
+      if (!nav || !toggle) return;
+
+      function setOpen(open) {
+        nav.classList.toggle('is-open', open);
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        toggle.textContent = open ? 'Close' : 'Menu';
+      }
+
+      toggle.addEventListener('click', function() {
+        setOpen(!nav.classList.contains('is-open'));
+      });
+
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && nav.classList.contains('is-open')) {
+          setOpen(false);
+          toggle.focus();
+        }
+      });
+    })();
+   </script>
 
   <script data-goatcounter="https://lasacramental.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
