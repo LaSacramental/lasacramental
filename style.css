@@ -37,6 +37,14 @@ body::before {
   z-index: 9999;
 }
 
+/* ── Focus styles — keyboard navigation visibility ─ */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
 /* ── Navigation ─────────────────────────────────── */
 nav {
   position: fixed;
@@ -99,7 +107,6 @@ nav {
 .nav-toggle:hover,
 .nav-toggle:focus-visible {
   color: var(--text);
-  outline: none;
 }
 
 /* ── Hero (index only) ──────────────────────────── */
