@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page not found — La Sacramental</title>
+  <meta name="description" content="The page you were looking for does not exist.">
+  <meta name="robots" content="noindex">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/style.css">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+</head>
+<body>
+
+  <nav>
+    <a href="/index.html" class="nav-logo"><img src="/Logo.png" alt="La Sacramental"></a>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/catalogue.html">Catalogue</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="page">
+    <span class="section-tag">404</span>
+    <h2>No longer <em>with us.</em></h2>
+    <p>The page you were looking for does not exist &mdash; or no longer does.</p>
+    <p style="margin-top: 2.5rem;">
+      <a href="/" class="contact-email">Return to the beginning</a>
+    </p>
+  </main>
+
+  <footer>
+    <span>La Sacramental</span>
+    <span>Barcelona</span>
+    <span>&copy; 2026</span>
+  </footer>
+
+  <script>
+    (function() {
+      const nav = document.querySelector('nav');
+      const toggle = document.querySelector('.nav-toggle');
+      if (!nav || !toggle) return;
+
+      function setOpen(open) {
+        nav.classList.toggle('is-open', open);
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        toggle.textContent = open ? 'Close' : 'Menu';
+      }
+
+      toggle.addEventListener('click', function() {
+        setOpen(!nav.classList.contains('is-open'));
+      });
+
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && nav.classList.contains('is-open')) {
+          setOpen(false);
+          toggle.focus();
+        }
+      });
+    })();
+  </script>
+
+  <script data-goatcounter="https://lasacramental.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
