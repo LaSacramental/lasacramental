@@ -354,23 +354,42 @@ p strong {
   line-height: 1.7;
 }
 
-/* ── Banner Coming Soon ─────────────────────────── */
-.banner-coming-soon {
-  background: var(--bg);
-  padding: 1.25rem;
+/* ── Label intro + newsletter CTA (index only) ──── */
+.label-intro {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 8rem 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   text-align: center;
-  border-top: 1px solid var(--accent);
-  border-bottom: 1px solid var(--accent);
-  margin-top: 120px;
 }
 
-.banner-coming-soon p {
+.label-intro p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+.newsletter-cta {
+  display: inline-block;
+  align-self: center;
+  margin-top: 1rem;
+  padding: 0.65rem 1.6rem;
+  border: 1px solid var(--accent);
   color: var(--accent);
-  margin: 0;
-  font-family: var(--font-display);
-  font-size: 48px;
-  font-weight: 300;
-  letter-spacing: 0.05em;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.newsletter-cta:hover {
+  background-color: var(--accent);
+  color: var(--bg);
 }
 
 /* ── Footer ─────────────────────────────────────── */
@@ -434,12 +453,9 @@ footer {
     font-size: 0.85rem;
   }
 
-  .banner-coming-soon {
-    margin-top: 88px;
-    padding: 1rem;
+  .label-intro {
+    padding: 6.5rem 1.5rem 2rem;
   }
-
-  .banner-coming-soon p { font-size: 32px; }
 
   .page { padding: 7rem 1.5rem 4rem; }
 
