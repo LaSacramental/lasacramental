@@ -372,6 +372,12 @@ p strong {
   margin-bottom: 0;
 }
 
+.teaser-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .newsletter-cta {
   display: inline-block;
   align-self: center;
